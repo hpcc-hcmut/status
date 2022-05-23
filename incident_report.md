@@ -11,3 +11,8 @@ We received a Power Outage Notice today at H6 campus, from 12:00 PM to 6:30 PM
 #### 14 Mar, 2022
 
 One of our LAN router at H6 is working not properly since the yesterday Power Outage. All public services are unaccessible. We are investigating this issue.
+
+---
+#### 21 May, 2022
+
+We detected a Power Outage Notice today at H6 campus, possibility caused by a thunderstorm.
