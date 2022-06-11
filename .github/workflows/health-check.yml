@@ -39,9 +39,9 @@ jobs:
           # Optional whether this connection use TLS (default is true if server_port is 465)
           secure: true
           # Optional plain body:
-          body: An scheduled health check was failed. Please verify system status at https://status.hpcc.vn.
+          body: An scheduled health check was failed. Please verify system status at https://hpccbk.github.io/status/
           # Optional HTML body read from file:
-          html_body: file://README.html
+          # html_body: file://README.html
           # Optional carbon copy recipients:
           cc: hpcc@hcmut.edu.vn,namthoai@hcmut.edu.vn,lai@hcmut.edu.vn,xuangiang@hcmut.edu.vn,loclh249@hcmut.edu.vn,nqhung@hcmut.edu.vn
           # Optional priority: 'high', 'normal' (default) or 'low'
