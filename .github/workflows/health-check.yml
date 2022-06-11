@@ -19,7 +19,7 @@ jobs:
         run: bash ./health-check.sh
 
       - name: Send emails if check fail
-      - uses: dawidd6/action-send-mail@v3
+        uses: dawidd6/action-send-mail@v3
         with:
           # Required mail server address:
           server_address: mail.hpcc.vn
