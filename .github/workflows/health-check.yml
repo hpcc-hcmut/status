@@ -7,19 +7,18 @@ on:
 
 jobs:
   health_check_job:
-    id: health_check_job
     runs-on: ubuntu-latest
     name: Check all sites
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+
       - name: Run Shell Script
         id: shell_script_run
         run: bash ./health-check.sh
-  send_email_if_fail:
-    name: Send emails if check fail
-    steps:
+
+      - name: Send emails if check fail
       - uses: dawidd6/action-send-mail@v3
         with:
           # Required mail server address:
