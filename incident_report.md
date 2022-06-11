@@ -16,3 +16,8 @@ One of our LAN router at H6 is working not properly since the yesterday Power Ou
 #### 21 May, 2022
 
 A power outage occured today at H6 campus, possibility caused by a big thunderstorm.
+
+---
+#### 11 June, 2022
+
+We detected a security threat which leads to network failures. We are investigating this problem.
