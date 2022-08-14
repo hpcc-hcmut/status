@@ -21,3 +21,8 @@ A power outage occured today at H6 campus, possibility caused by a big thunderst
 #### 11 June, 2022
 
 We detected a security threat which leads to network failures. We are investigating this problem.
+
+---
+#### 14 Aug, 2022
+
+A power outage occured today at H6 campus. All services are temporarily unaccesible
