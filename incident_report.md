@@ -26,3 +26,8 @@ We detected a security threat which leads to network failures. We are investigat
 #### 14 Aug, 2022
 
 A power outage occured today at H6 campus. All services are temporarily unaccesible
+
+---
+#### 16 Sep, 2022
+
+Our proxy server is temporary down. We have fixed this issue.
