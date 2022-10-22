@@ -31,3 +31,8 @@ A power outage occured today at H6 campus. All services are temporarily unaccesi
 #### 16 Sep, 2022
 
 Our proxy server is temporary down. We have fixed this issue.
+
+---
+#### 22 Oct, 2022
+
+We are having some issues on our power supply. 
