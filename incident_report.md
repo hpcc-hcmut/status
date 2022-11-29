@@ -36,3 +36,8 @@ Our proxy server is temporary down. We have fixed this issue.
 #### 22 Oct, 2022
 
 We are having some issues on our power supply. 
+
+---
+#### 29 Nov, 2022
+
+The electricity system at the H6 building had been shut down due to an unexpected issue. 
