@@ -2,5 +2,7 @@
 
 # HPC Lab Services Status Page
 
+Web: https://hpccbk.github.io/status/ 
+
 Forked from https://status.statsig.com
 
