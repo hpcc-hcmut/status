@@ -21,8 +21,8 @@ jobs:
       - name: Send Telegram MSG if check fail
         uses: appleboy/telegram-action@master
         with:
-           to: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-           token: ${{ secrets.TELEGRAM_NOTIFY_GROUP }}
+           to: ${{ secrets.TELEGRAM_NOTIFY_GROUP }}
+           token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
            if: failure()
            message: |
             Scheduled healthcheck failed. Please check the HPCC Service status at https://hpccbk.github.io/status/
