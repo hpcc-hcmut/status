@@ -25,4 +25,4 @@ jobs:
            token: ${{ secrets.TELEGRAM_NOTIFY_GROUP }}
            if: failure()
            message: |
-            Scheduled healthcheck is failed. Please check at https://hpccbk.github.io/status/
+            Scheduled healthcheck failed. Please check the HPCC Service status at https://hpccbk.github.io/status/
