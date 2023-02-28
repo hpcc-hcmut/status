@@ -41,3 +41,8 @@ We are having some issues on our power supply.
 #### 29 Nov, 2022
 
 The electricity system at the H6 building had been shut down due to an unexpected issue. 
+
+---
+#### 27 Feb, 2023
+
+We are having some issues with our Internet connection. Our services are unaccessible until being fixed by the Internet provider. 
