@@ -18,31 +18,10 @@ jobs:
         id: shell_script_run
         run: bash ./health-check.sh
 
-      - name: Send emails if check fail
-        uses: dawidd6/action-send-mail@v3
+      - name: Send Telegram MSG if check fail
+        uses: appleboy/telegram-action@master
         with:
-          # Required mail server address:
-          server_address: mail.hpcc.vn
-          # Required mail server port:
-          server_port: 465
-          # Optional (recommended): mail server username:
-          username: ${{secrets.MAIL_USERNAME}}
-          # Optional (recommended) mail server password:
-          password: ${{secrets.MAIL_PASSWORD}}
-          # Required mail subject:
-          subject: HPC Lab Services Health Check Failures
-          # Required recipients' addresses:
-          to: thanhhoang@hcmut.edu.vn,nmthin@hcmut.edu.vn
-          # Required sender full name (address can be skipped):
-          from: HPC Lab Services # <user@example.com>
-          # Optional whether this connection use TLS (default is true if server_port is 465)
-          secure: true
-          # Optional plain body:
-          body: An scheduled health check was failed. Please verify system status at https://hpccbk.github.io/status/
-          # Optional HTML body read from file:
-          # html_body: file://README.html
-          # Optional carbon copy recipients:
-          cc: hpcc@hcmut.edu.vn,namthoai@hcmut.edu.vn,lai@hcmut.edu.vn,xuangiang@hcmut.edu.vn,loclh249@hcmut.edu.vn,nqhung@hcmut.edu.vn
-          # Optional priority: 'high', 'normal' (default) or 'low'
-          priority: high
-        if: always() && steps.health_check_job.outcome == 'failure'
+           to: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+           token: ${{ secrets.TELEGRAM_NOTIFY_GROUP }}
+           message: |
+            Scheduled healthcheck is failed. Please check at https://hpccbk.github.io/status/
