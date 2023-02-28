@@ -23,5 +23,6 @@ jobs:
         with:
            to: ${{ secrets.TELEGRAM_BOT_TOKEN }}
            token: ${{ secrets.TELEGRAM_NOTIFY_GROUP }}
+           if: failure()
            message: |
             Scheduled healthcheck is failed. Please check at https://hpccbk.github.io/status/
