@@ -26,5 +26,5 @@ jobs:
            if: failure()
            message: |
             [SCHEDULED HEALCHECK] 
-            One or more HPCC services are unaccessible. 
+            One or more HPCC services are inaccessible. 
             Please check the status at https://hpccbk.github.io/status/
