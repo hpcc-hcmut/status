@@ -25,4 +25,6 @@ jobs:
            token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
            if: failure()
            message: |
-            Scheduled healthcheck failed. Please check the HPCC Service status at https://hpccbk.github.io/status/
+            [SCHEDULED HEALCHECK] 
+            One or more HPCC services are unaccessible. 
+            Please check the status at https://hpccbk.github.io/status/
