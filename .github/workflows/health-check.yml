@@ -19,11 +19,11 @@ jobs:
         run: bash ./health-check.sh
 
       - name: Send Telegram MSG if check fail
+        if: always() && (steps.shell_script_run.outcome == 'failure')
         uses: appleboy/telegram-action@master
         with:
            to: ${{ secrets.TELEGRAM_NOTIFY_GROUP }}
            token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-           if: always() && (steps.shell_script_run.outcome == 'failure')
            message: |
             [SCHEDULED HEALTH CHECK] 
             One or more HPCC services are inaccessible. 
