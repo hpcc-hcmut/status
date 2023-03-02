@@ -23,7 +23,7 @@ jobs:
         with:
            to: ${{ secrets.TELEGRAM_NOTIFY_GROUP }}
            token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-           if: failure()
+           if: always() && (steps.shell_script_run.outcome == 'failure')
            message: |
             [SCHEDULED HEALTH CHECK] 
             One or more HPCC services are inaccessible. 
